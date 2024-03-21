@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <title>Caroline's Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('消消乐.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            background-size: 85%;
+            background-position: 55% center; /* 将背景图片向左移动一些 */
+        }
+        #爆炸1  img {
+            width: 400px; /* 设置图片宽度为100像素 */
+            height: auto; /* 自动计算图片的高度，以保持比例 */
+            position: absolute; /* 设置图片的定位方式为绝对定位 */
+            top: 200px; /* 设置图片的垂直位置为页面垂直居中向上偏移5% */
+            left: -2%; /* 设置图片的水平位置为页面水平居中 */
+            transform: translateX(430px); /* 将图片向右移动100像素 */
+            cursor: pointer; /* 添加指针样式，使鼠标悬停在图片上时呈现为手型 */
+        }
+        #蝴蝶  img {
+            width: 150px; /* 设置图片宽度为100像素 */
+            height: auto; /* 自动计算图片的高度，以保持比例 */
+            position: absolute; /* 设置图片的定位方式为绝对定位 */
+            top: 200px; /* 设置图片的垂直位置为页面垂直居中向上偏移5% */
+            left: 38%; /* 设置图片的水平位置为页面水平居中 */
+            transform: translateX(430px); /* 将图片向右移动100像素 */
+            cursor: pointer; /* 添加指针样式，使鼠标悬停在图片上时呈现为手型 */
+        }
+        #屁股  img {
+            width: 100px; /* 设置图片宽度为100像素 */
+            height: auto; /* 自动计算图片的高度，以保持比例 */
+            position: absolute; /* 设置图片的定位方式为绝对定位 */
+            top: 320px; /* 设置图片的垂直位置为页面垂直居中向上偏移5% */
+            left: 9%; /* 设置图片的水平位置为页面水平居中 */
+            transform: translateX(430px); /* 将图片向右移动100像素 */
+            cursor: pointer; /* 添加指针样式，使鼠标悬停在图片上时呈现为手型 */
+        }
+        #Cm  img {
+            width: 100px; /* 设置图片宽度为100像素 */
+            height: auto; /* 自动计算图片的高度，以保持比例 */
+            position: absolute; /* 设置图片的定位方式为绝对定位 */
+            top: 650px; /* 设置图片的垂直位置为页面垂直居中向上偏移5% */
+            left:35%; /* 设置图片的水平位置为页面水平居中 */
+            transform: translateX(430px); /* 将图片向右移动100像素 */
+            cursor: pointer; /* 添加指针样式，使鼠标悬停在图片上时呈现为手型 */
+        }
+    </style>
+</head>
+<body>
+    <div id="爆炸1">
+        <img src="爆炸1.gif" alt="爆炸1">
+    </div>
+    <div id="蝴蝶">
+        <img src="蝴蝶.gif" alt="蝴蝶">
+    </div>
+    <div id="屁股">
+        <img src="屁股.png" alt="屁股">
+    </div>
+    <div id="Cm">
+        <img src="Cm.png" alt="Cm">
+    </div>
+    <script>
+        document.getElementById("Cm").addEventListener("click", function() {
+            // 点击 "Cm.png" 图片时跳转到 index16.html 页面
+            window.location.href = "index16.html";
+        });
+    </script>
+    
+</body>
+</html>

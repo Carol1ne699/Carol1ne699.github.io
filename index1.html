@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    
+    <title>Caroline's Website</title>
+    <script src='pixi.js'></script><script  src="./script.js"></script>
+    
+    <style>
+        #背景 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* 将背景置于最底层 */
+        }
+
+        #背景 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* 保持图片比例并填充整个容器 */
+        }
+
+        #地球 img {
+            width: 100px; /* 设置地球宽度为200像素 */
+            height: auto; /* 自动计算地球的高度，以保持比例 */
+            position: absolute; /* 设置地球的定位方式为绝对定位 */
+            top: 30%; /* 设置地球的垂直位置为页面垂直居中向上偏移30% */
+            left: 50%; /* 设置地球的水平位置为页面水平居中 */
+            transform: translateX(430px); /* 将地球向右移动100像素 */
+            cursor: pointer; /* 添加指针样式，使鼠标悬停在图片上时呈现为手型 */
+        }
+        
+        #上帝 img {
+            width: 100px; /* 设置地球宽度为200像素 */
+            height: auto; /* 自动计算地球的高度，以保持比例 */
+            position: fixed; /* 设置地球的定位方式为绝对定位 */
+            top:45%; /* 设置地球的垂直位置为页面垂直居中向上偏移30% */
+            left: 43%; /* 设置地球的水平位置为页面水平居中 */
+            transform: translateX(430px); /* 将地球向右移动100像素 */
+            cursor: pointer; /* 添加指针样式，使鼠标悬停在图片上时呈现为手型 */
+        }
+         
+        #一对 img {
+            width: 200px; /* 设置地球宽度为200像素 */
+            height: auto; /* 自动计算地球的高度，以保持比例 */
+            position: fixed; /* 设置地球的定位方式为绝对定位 */
+            top:70%; /* 设置地球的垂直位置为页面垂直居中向上偏移30% */
+            left: 45%; /* 设置地球的水平位置为页面水平居中 */
+            transform: translateX(430px); /* 将地球向右移动100像素 */
+            cursor: pointer; /* 添加指针样式，使鼠标悬停在图片上时呈现为手型 */
+        }
+        #审判 img {
+            width: 130px; /* 设置地球宽度为200像素 */
+            height: auto; /* 自动计算地球的高度，以保持比例 */
+            position: fixed; /* 设置地球的定位方式为绝对定位 */
+            top:42%; /* 设置地球的垂直位置为页面垂直居中向上偏移30% */
+            left: -25%; /* 设置地球的水平位置为页面水平居中 */
+            transform: translateX(430px); /* 将地球向右移动100像素 */
+            cursor: pointer; /* 添加指针样式，使鼠标悬停在图片上时呈现为手型 */
+        }
+
+        #homepage  img {
+            width: 100px; /* 设置图片宽度为100像素 */
+            height: auto; /* 自动计算图片的高度，以保持比例 */
+            position: absolute; /* 设置图片的定位方式为绝对定位 */
+            top: 5%; /* 设置图片的垂直位置为页面垂直居中向上偏移5% */
+            left: 30%; /* 设置图片的水平位置为页面水平居中 */
+            transform: translateX(430px); /* 将图片向右移动100像素 */
+            cursor: pointer; /* 添加指针样式，使鼠标悬停在图片上时呈现为手型 */
+        }
+        #人物介绍 img {
+            width: 110px; /* 设置图片宽度为100像素 */
+            height: auto; /* 自动计算图片的高度，以保持比例 */
+            position: absolute; /* 设置图片的定位方式为绝对定位 */
+            top: 5%; /* 设置图片的垂直位置为页面垂直居中向上偏移5% */
+            left: 30%; /* 设置图片的水平位置为页面水平居中 */
+            transform: translateX(540px); /* 将人物介绍图片向右移动110像素 */
+            cursor: pointer; /* 添加指针样式，使鼠标悬停在图片上时呈现为手型 */
+        }
+        #人间乐园 img {
+            width: 170px; /* 设置图片宽度为100像素 */
+            height: auto; /* 自动计算图片的高度，以保持比例 */
+            position: absolute; /* 设置图片的定位方式为绝对定位 */
+            top: 5%; /* 设置图片的垂直位置为页面垂直居中向上偏移5% */
+            left: 30%; /* 设置图片的水平位置为页面水平居中 */
+            transform: translateX(660px); /* 将人物介绍图片向右移动110像素 */
+            cursor: pointer; /* 添加指针样式，使鼠标悬停在图片上时呈现为手型 */
+          
+        }
+    </style>
+</head>
+<body>
+    <div id="背景">
+        <img src="封面.png" alt="封面">
+    </div>
+    <div id="地球" onclick="redirectToIndex3()">
+        <img src="地球.png" alt="地球">
+    </div>
+    <div id="homepage" onclick="redirectToIndex1()">
+        <img src="homepage.png" alt="homepage">
+    </div>
+    <div id="人物介绍" onclick="redirectToIndex2()">
+        <img src="人物介绍.png" alt="人物介绍">
+    </div>
+    <div id="人间乐园" >
+        <img src="人间乐园.png" alt="人间乐园">
+    </div>
+    <div id="上帝" onclick="redirectToIndex6()">
+        <img src="上帝.png" alt="上帝">
+    </div>
+    
+    <div id="一对" >
+        <img src="一对.png" alt="一对">
+    </div>
+    <div id="审判" onclick="redirectToIndex17()">
+        <img src="审判.png" alt="审判">
+    </div>
+   
+    <script>
+      
+    function redirectToIndex1() {
+        window.location.href = 'index.html';
+    }
+
+    function redirectToIndex2() {
+        window.location.href = 'index2.html';
+    }
+    
+    function redirectToIndex3() {
+        window.location.href = 'index3.html';
+    }
+    
+    function redirectToIndex6() {
+        window.location.href = 'index6.html';
+    }
+    document.getElementById('一对').onclick = function() {
+        window.location.href = 'index9.html';
+    }
+    function redirectToIndex17() {
+        window.location.href = 'index17.html';
+    }
+    
+    // 获取人间乐园图片元素
+    var paradiseImage = document.querySelector("#人间乐园 img");
+    // 给人间乐园图片元素添加点击事件监听器
+    paradiseImage.addEventListener("click", function() {
+        // 在点击时跳转到index11.html页面
+        window.location.href = "index11.html";
+    });
+
+
+</script>
+
+
+    
+</body>
+</html>
