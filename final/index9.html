@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <script src="script.js"></script>
+    <title>Caroline's Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('人间.png');
+            background-size: 50%; /* 缩小背景图片为页面宽度的一半 */
+            background-repeat: no-repeat;
+            background-position: center; /* 将背景图片居中显示 */
+            height: 100vh;
+        }
+        #dong1 img {
+            width: 50px; /* 缩小图片为原来的一半大小 */
+            height: auto; /* 自动计算高度以保持比例 */
+            position: relative; /* 设置相对定位 */
+            left: 350px; /* 向右偏移50像素 */
+        }
+
+        #dong2 img {
+            width: 50px; /* 缩小图片为原来的一半大小 */
+            height: auto; /* 自动计算高度以保持比例 */
+            position: relative; /* 设置相对定位 */
+            left: 370px; /* 向右偏移50像素 */
+            top: 50px;
+        }
+        
+        #dongb img {
+            width: 50px; /* 缩小图片为原来的一半大小 */
+            height: auto; /* 自动计算高度以保持比例 */
+            position: relative; /* 设置相对定位 */
+            left: 450px; /* 向右偏移50像素 */
+            top: -40px;
+            transition: transform 1.5s; 
+        }
+        #dongb img:hover {
+            transform: translateY(-20px); /* 鼠标悬停时向上浮动20像素 */
+        }
+        #maque img {
+            width: 50px; /* 缩小图片为原来的一半大小 */
+            height: auto; /* 自动计算高度以保持比例 */
+            position: relative; /* 设置相对定位 */
+            left: 550px; /* 向右偏移50像素 */
+            top: -40px;
+        }
+        #yellow img {
+            width: 50px; /* 缩小图片为原来的一半大小 */
+            height: auto; /* 自动计算高度以保持比例 */
+            position: relative; /* 设置相对定位 */
+            left: 530px; /* 向右偏移50像素 */
+            top: -170px;
+        }
+        #人间乐园b img {
+            width: 50px; /* 缩小图片为原来的一半大小 */
+            height: auto; /* 自动计算高度以保持比例 */
+            position: relative; /* 设置相对定位 */
+            left: 670px; /* 向右偏移50像素 */
+            top: -200px;
+        }
+        #人间乐园c img {
+            width: 50px; /* 缩小图片为原来的一半大小 */
+            height: auto; /* 自动计算高度以保持比例 */
+            position: relative; /* 设置相对定位 */
+            left: 700px; /* 向右偏移50像素 */
+            top: -200px;
+        }
+        #人间乐园n img {
+            width: 50px; /* 缩小图片为原来的一半大小 */
+            height: auto; /* 自动计算高度以保持比例 */
+            position: relative; /* 设置相对定位 */
+            left: 750px; /* 向右偏移50像素 */
+            top: -350px;
+        }
+        #人间乐园y img {
+            width: 50px; /* 缩小图片为原来的一半大小 */
+            height: auto; /* 自动计算高度以保持比例 */
+            position: relative; /* 设置相对定位 */
+            left: 850px; /* 向右偏移50像素 */
+            top: -350px;
+        }
+        #彩虹 img {
+            width: 200px; /* 缩小图片为原来的一半大小 */
+            height: auto; /* 自动计算高度以保持比例 */
+            position: relative; /* 设置相对定位 */
+            left: 750px; /* 向右偏移50像素 */
+            top: -120px;
+        }
+        body:hover img:not(#彩虹 img) {
+            transform: translateY(-20px); 
+            transition: transform 1.5s; 
+        }
+    </style>
+</head>
+<body>
+    <div id="dong1">
+        <img src="dong1.png" alt="dong1">
+    </div>
+    <div id="dong2">
+        <img src="dong2.png" alt="dong2">
+    </div>
+    <div id="dongb">
+        <img src="dongb.png" alt="dongb">
+    </div>
+    <div id="maque">
+        <img src="maque.png" alt="maque">
+    </div>
+    <div id="yellow">
+        <img src="yellow.png" alt="yellow">
+    </div>
+    <div id="人间乐园b">
+        <img src="人间乐园b.png" alt="人间乐园b">
+    </div>
+    <div id="人间乐园c">
+        <img src="人间乐园c.png" alt="人间乐园c">
+    </div>
+    <div id="人间乐园n">
+        <img src="人间乐园n.png" alt="人间乐园n">
+    </div>
+    <div id="人间乐园y">
+        <img src="人间乐园y.png" alt="人间乐园y">
+    </div>
+    <div id="彩虹">
+        <img src="彩虹.png" alt="彩虹">
+    </div>
+<script>
+    document.getElementById('彩虹').onclick = function() {
+    window.location.href = 'index10.html';
+}
+</script>
+</body>
+</html>

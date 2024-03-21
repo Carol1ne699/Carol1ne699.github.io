@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <title>Caroline's Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('消消乐.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            background-size: 85%;
+            background-position: 55% center; /* 将背景图片向左移动一些 */
+        }
+        #箭头 img {
+            width: 100px; /* 设置图片宽度为100像素 */
+            height: auto; /* 自动计算图片的高度，以保持比例 */
+            position: absolute; /* 设置图片的定位方式为绝对定位 */
+            top: 350px; /* 设置图片的垂直位置为页面垂直居中向上偏移5% */
+            left: 10%; /* 设置图片的水平位置为页面水平居中 */
+            transform: translateX(430px); /* 将图片向右移动100像素 */
+            cursor: pointer; /* 添加指针样式，使鼠标悬停在图片上时呈现为手型 */
+        }
+    </style>
+</head>
+<body>
+    <div id="箭头">
+        <img src="箭头.png" alt="箭头" onclick="redirectToIndex15()">
+    </div>
+
+    <script>
+        function redirectToIndex15() {
+            window.location.href = 'index15.html';
+        }
+    </script>
+</body>
+</html>
