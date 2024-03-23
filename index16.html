@@ -5,25 +5,25 @@
   <style>
     body {
       margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-image: url('欲望之河.png');
-      background-size: cover;
-      background-repeat: no-repeat;
-      position: relative;
-      background-size: 85%;
-      background-position: 55% center;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('欲望之河.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            background-size: 85%;
+            background-position: 55% center; /* 将背景图片向左移动一些 */
     }
 
     #条幅 img {
-      width: 1500px;
+      width: 500px;
       height: auto;
-      position: absolute;
-      top: 320px;
-      left: 37%;
+      position: fixed;
+      top: 120px;
+      left: 35%;
       cursor: pointer;
       animation: floating 3s ease-in-out infinite alternate;
     }
@@ -33,36 +33,36 @@
         transform: translateY(0);
       }
       50% {
-        transform: translateY(-60px); /* 增加了移动距离 */
+        transform: translateY(-20px); /* 增加了移动距离 */
       }
       100% {
         transform: translateY(0);
       }
     }
     #tomato  img {
-            width: 550px; /* 设置图片宽度为100像素 */
+            width: 150px; /* 设置图片宽度为100像素 */
             height: auto; /* 自动计算图片的高度，以保持比例 */
-            position: absolute; /* 设置图片的定位方式为绝对定位 */
-            top: 2020px; /* 设置图片的垂直位置为页面垂直居中向上偏移5% */
-            left: 2%; /* 设置图片的水平位置为页面水平居中 */
+            position: fixed; /* 设置图片的定位方式为绝对定位 */
+            top: 490px; /* 设置图片的垂直位置为页面垂直居中向上偏移5% */
+            left: -250px; /* 设置图片的水平位置为页面水平居中 */
             transform: translateX(430px); /* 将图片向右移动100像素 */
             cursor: pointer; /* 添加指针样式，使鼠标悬停在图片上时呈现为手型 */
         }
     #lemon  img {
-            width: 500px; /* 设置图片宽度为100像素 */
+            width: 150px; /* 设置图片宽度为100像素 */
             height: auto; /* 自动计算图片的高度，以保持比例 */
-            position: absolute; /* 设置图片的定位方式为绝对定位 */
-            top: 1820px; /* 设置图片的垂直位置为页面垂直居中向上偏移5% */
-            left: 72%; /* 设置图片的水平位置为页面水平居中 */
+            position: fixed; /* 设置图片的定位方式为绝对定位 */
+            top: 435px; /* 设置图片的垂直位置为页面垂直居中向上偏移5% */
+            left: 48%; /* 设置图片的水平位置为页面水平居中 */
             transform: translateX(430px); /* 将图片向右移动100像素 */
             cursor: pointer; /* 添加指针样式，使鼠标悬停在图片上时呈现为手型 */
         }
     #drop  img {
-            width: 200px; /* 设置图片宽度为100像素 */
+            width: 100px; /* 设置图片宽度为100像素 */
             height: auto; /* 自动计算图片的高度，以保持比例 */
-            position: absolute; /* 设置图片的定位方式为绝对定位 */
-            top: 2120px; /* 设置图片的垂直位置为页面垂直居中向上偏移5% */
-            left:11%; /* 设置图片的水平位置为页面水平居中 */
+            position: fixed; /* 设置图片的定位方式为绝对定位 */
+            top: 490px; /* 设置图片的垂直位置为页面垂直居中向上偏移5% */
+            left:13%; /* 设置图片的水平位置为页面水平居中 */
             transform: translateX(430px); /* 将图片向右移动100像素 */
             cursor: pointer; /* 添加指针样式，使鼠标悬停在图片上时呈现为手型 */
             animation: floatingDrop 2s ease-in-out infinite alternate;
@@ -72,18 +72,18 @@
         transform: translateY(0);
       }
       50% {
-        transform: translateY(-60px); /* 增加了移动距离 */
+        transform: translateY(-20px); /* 增加了移动距离 */
       }
       100% {
         transform: translateY(0);
       }
     }
     #鱼  img {
-            width: 800px; /* 设置图片宽度为100像素 */
+            width: 250px; /* 设置图片宽度为100像素 */
             height: auto; /* 自动计算图片的高度，以保持比例 */
-            position: absolute; /* 设置图片的定位方式为绝对定位 */
-            top: 2320px; /* 设置图片的垂直位置为页面垂直居中向上偏移5% */
-            left: 42%; /* 设置图片的水平位置为页面水平居中 */
+            position: fixed; /* 设置图片的定位方式为绝对定位 */
+            top: 540px; /* 设置图片的垂直位置为页面垂直居中向上偏移5% */
+            left: 30%; /* 设置图片的水平位置为页面水平居中 */
             transform: translateX(430px); /* 将图片向右移动100像素 */
             cursor: pointer; /* 添加指针样式，使鼠标悬停在图片上时呈现为手型 */
             animation: floatingFish 3s ease-in-out infinite alternate;
@@ -101,48 +101,48 @@
   }
 }
 #鱼1  img {
-            width: 500px; /* 设置图片宽度为100像素 */
+            width: 200px; /* 设置图片宽度为100像素 */
             height: auto; /* 自动计算图片的高度，以保持比例 */
-            position: absolute; /* 设置图片的定位方式为绝对定位 */
-            top: 2120px; /* 设置图片的垂直位置为页面垂直居中向上偏移5% */
-            left: 42%; /* 设置图片的水平位置为页面水平居中 */
+            position: fixed; /* 设置图片的定位方式为绝对定位 */
+            top: 580px; /* 设置图片的垂直位置为页面垂直居中向上偏移5% */
+            left: 40%; /* 设置图片的水平位置为页面水平居中 */
             transform: translateX(430px); /* 将图片向右移动100像素 */
             cursor: pointer; /* 添加指针样式，使鼠标悬停在图片上时呈现为手型 */
             animation: floatingFish 3s ease-in-out infinite alternate;
       }
       #猕猴桃  img {
-            width: 300px; /* 设置图片宽度为100像素 */
+            width: 100px; /* 设置图片宽度为100像素 */
             height: auto; /* 自动计算图片的高度，以保持比例 */
-            position: absolute; /* 设置图片的定位方式为绝对定位 */
-            top: 2220px; /* 设置图片的垂直位置为页面垂直居中向上偏移5% */
-            left: 5%; /* 设置图片的水平位置为页面水平居中 */
+            position: fixed; /* 设置图片的定位方式为绝对定位 */
+            top: 480px; /* 设置图片的垂直位置为页面垂直居中向上偏移5% */
+            left: 43%; /* 设置图片的水平位置为页面水平居中 */
             transform: translateX(430px); /* 将图片向右移动100像素 */
             cursor: pointer; /* 添加指针样式，使鼠标悬停在图片上时呈现为手型 */
         }
         #橘子  img {
-            width: 300px; /* 设置图片宽度为100像素 */
+            width: 80px; /* 设置图片宽度为100像素 */
             height: auto; /* 自动计算图片的高度，以保持比例 */
-            position: absolute; /* 设置图片的定位方式为绝对定位 */
-            top: 2020px; /* 设置图片的垂直位置为页面垂直居中向上偏移5% */
-            left: 72%; /* 设置图片的水平位置为页面水平居中 */
+            position: fixed; /* 设置图片的定位方式为绝对定位 */
+            top: 560px; /* 设置图片的垂直位置为页面垂直居中向上偏移5% */
+            left: -15%; /* 设置图片的水平位置为页面水平居中 */
             transform: translateX(430px); /* 将图片向右移动100像素 */
             cursor: pointer; /* 添加指针样式，使鼠标悬停在图片上时呈现为手型 */
         }
         #我赢  img {
-            width: 450px; /* 设置图片宽度为100像素 */
+            width: 100px; /* 设置图片宽度为100像素 */
             height: auto; /* 自动计算图片的高度，以保持比例 */
-            position: absolute; /* 设置图片的定位方式为绝对定位 */
-            top: 1520px; /* 设置图片的垂直位置为页面垂直居中向上偏移5% */
-            left: 72%; /* 设置图片的水平位置为页面水平居中 */
+            position: fixed; /* 设置图片的定位方式为绝对定位 */
+            top: 380px; /* 设置图片的垂直位置为页面垂直居中向上偏移5% */
+            left: 50%; /* 设置图片的水平位置为页面水平居中 */
             transform: translateX(430px); /* 将图片向右移动100像素 */
             cursor: pointer; /* 添加指针样式，使鼠标悬停在图片上时呈现为手型 */
         }
         #返回  img {
-            width: 300px; /* 设置图片宽度为100像素 */
+            width: 100px; /* 设置图片宽度为100像素 */
             height: auto; /* 自动计算图片的高度，以保持比例 */
-            position: absolute; /* 设置图片的定位方式为绝对定位 */
-            top: 2620px; /* 设置图片的垂直位置为页面垂直居中向上偏移5% */
-            left: 72%; /* 设置图片的水平位置为页面水平居中 */
+            position: fixed; /* 设置图片的定位方式为绝对定位 */
+            top: 700px; /* 设置图片的垂直位置为页面垂直居中向上偏移5% */
+            left: 50%; /* 设置图片的水平位置为页面水平居中 */
             transform: translateX(430px); /* 将图片向右移动100像素 */
             cursor: pointer; /* 添加指针样式，使鼠标悬停在图片上时呈现为手型 */
         }
@@ -189,3 +189,4 @@
 </body>
 
 </html>
+
