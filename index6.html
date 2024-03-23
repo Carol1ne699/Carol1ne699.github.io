@@ -21,16 +21,33 @@
             object-fit: cover; /* 保持图片比例并填充整个容器 */
         }
         
-        #上帝 img {
-            width: 300px; /* 设置上帝图片宽度 */
-            height: auto; /* 设置上帝图片高度 */
-            object-fit: cover; /* 保持图片比例并填充整个容器 */
-            position: fixed; /* 设置上帝图片的定位方式为绝对定位 */
-            top: 28%; /* 设置上帝图片的垂直位置为页面垂直居中向上偏移30% */
-            left: 50%; /* 设置上帝图片的水平位置为页面水平居中 */
-            transform: translate(-50%, -50%); /* 将上帝图片向上和向左移动50%的宽度和高度，以使其水平和垂直居中 */
-            cursor: pointer; /* 添加指针样式，使鼠标悬停在上帝图片上时呈现为手型 */
+     
+    #上帝 img {
+        width: 300px; /* 设置上帝图片宽度 */
+        height: auto; /* 设置上帝图片高度 */
+        object-fit: cover; /* 保持图片比例并填充整个容器 */
+        position: fixed; /* 设置上帝图片的定位方式为绝对定位 */
+        top: 10%; /* 设置上帝图片的垂直位置为页面垂直居中向上偏移30% */
+        left: 40%; /* 设置上帝图片的水平位置为页面水平居中 */
+        transform: translate(-50%, -50%); /* 将上帝图片向上和向左移动50%的宽度和高度，以使其水平和垂直居中 */
+        cursor: pointer; /* 添加指针样式，使鼠标悬停在上帝图片上时呈现为手型 */
+        animation: floatUpDown 2s ease-in-out infinite; /* 添加上下浮动的动画效果 */
+    }
+
+    /* 定义上下浮动的动画 */
+    @keyframes floatUpDown {
+        0% {
+            transform: translateY(0);
         }
+        50% {
+            transform: translateY(-20px); /* 设置图片向上浮动的距离 */
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+
 
         #xiezi img {
             width: 100px; /* 设置蝎子图片宽度 */
