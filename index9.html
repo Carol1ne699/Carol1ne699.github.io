@@ -15,122 +15,417 @@
             background-position: center; /* 将背景图片居中显示 */
             height: 100vh;
         }
-        #dong1 img {
-            width: 50px; /* 缩小图片为原来的一半大小 */
-            height: auto; /* 自动计算高度以保持比例 */
-            position: relative; /* 设置相对定位 */
-            left: 350px; /* 向右偏移50像素 */
-        }
-
-        #dong2 img {
-            width: 50px; /* 缩小图片为原来的一半大小 */
-            height: auto; /* 自动计算高度以保持比例 */
-            position: relative; /* 设置相对定位 */
-            left: 370px; /* 向右偏移50像素 */
-            top: 50px;
-        }
-        
-        #dongb img {
-            width: 50px; /* 缩小图片为原来的一半大小 */
-            height: auto; /* 自动计算高度以保持比例 */
-            position: relative; /* 设置相对定位 */
-            left: 450px; /* 向右偏移50像素 */
-            top: -40px;
-            transition: transform 1.5s; 
-        }
-        #dongb img:hover {
-            transform: translateY(-20px); /* 鼠标悬停时向上浮动20像素 */
-        }
-        #maque img {
-            width: 50px; /* 缩小图片为原来的一半大小 */
-            height: auto; /* 自动计算高度以保持比例 */
-            position: relative; /* 设置相对定位 */
-            left: 550px; /* 向右偏移50像素 */
-            top: -40px;
-        }
-        #yellow img {
-            width: 50px; /* 缩小图片为原来的一半大小 */
-            height: auto; /* 自动计算高度以保持比例 */
-            position: relative; /* 设置相对定位 */
-            left: 530px; /* 向右偏移50像素 */
-            top: -170px;
-        }
-        #人间乐园b img {
-            width: 50px; /* 缩小图片为原来的一半大小 */
-            height: auto; /* 自动计算高度以保持比例 */
-            position: relative; /* 设置相对定位 */
-            left: 670px; /* 向右偏移50像素 */
-            top: -200px;
-        }
-        #人间乐园c img {
-            width: 50px; /* 缩小图片为原来的一半大小 */
-            height: auto; /* 自动计算高度以保持比例 */
-            position: relative; /* 设置相对定位 */
-            left: 700px; /* 向右偏移50像素 */
-            top: -200px;
-        }
-        #人间乐园n img {
-            width: 50px; /* 缩小图片为原来的一半大小 */
-            height: auto; /* 自动计算高度以保持比例 */
-            position: relative; /* 设置相对定位 */
-            left: 750px; /* 向右偏移50像素 */
-            top: -350px;
-        }
-        #人间乐园y img {
-            width: 50px; /* 缩小图片为原来的一半大小 */
-            height: auto; /* 自动计算高度以保持比例 */
-            position: relative; /* 设置相对定位 */
-            left: 850px; /* 向右偏移50像素 */
-            top: -350px;
-        }
-        #彩虹 img {
-            width: 200px; /* 缩小图片为原来的一半大小 */
-            height: auto; /* 自动计算高度以保持比例 */
-            position: relative; /* 设置相对定位 */
-            left: 750px; /* 向右偏移50像素 */
-            top: -120px;
-        }
+   
         body:hover img:not(#彩虹 img) {
             transform: translateY(-20px); 
             transition: transform 1.5s; 
         }
+        .zoom-img {
+        transition: transform 0.2s; /* 添加过渡效果 */
+        position: relative;
+        width: 52px; /* 缩小图片为原来的一半大小 */
+        height: auto; /* 自动计算高度以保持比例 */
+        left: 370px; /* 向右偏移50像素 */
+        top: 65px;
+
+        }
+        .zoom-img1  {
+           transition: transform 0.2s; /* 添加过渡效果 */
+           position: relative;
+           width: 50px; /* 缩小图片为原来的一半大小 */
+           height: auto; /* 自动计算高度以保持比例 */
+           left: 400px; /* 向右偏移50像素 */
+           top: 40px;
+    }
+         .zoom-img2  {
+           transition: transform 0.2s; /* 添加过渡效果 */
+           position: relative;
+           width: 50px; /* 缩小图片为原来的一半大小 */
+           height: auto; /* 自动计算高度以保持比例 */
+           left: 430px; /* 向右偏移50像素 */
+           top: 85px;
+    }
+         .zoom-img3  {
+           transition: transform 0.2s; /* 添加过渡效果 */
+           position: relative;
+           width: 50px; /* 缩小图片为原来的一半大小 */
+           height: auto; /* 自动计算高度以保持比例 */
+           left: 430px; /* 向右偏移50像素 */
+           top: 75px;
+    }
+         .zoom-img4  {
+           transition: transform 0.2s; /* 添加过渡效果 */
+           position: relative;
+           width: 50px; /* 缩小图片为原来的一半大小 */
+           height: auto; /* 自动计算高度以保持比例 */
+           left: 450px; /* 向右偏移50像素 */
+           top: 55px;
+    }
+          .zoom-img5  {
+           transition: transform 0.2s; /* 添加过渡效果 */
+           position: relative;
+           width: 50px; /* 缩小图片为原来的一半大小 */
+           height: auto; /* 自动计算高度以保持比例 */
+           left: 480px; /* 向右偏移50像素 */
+           top: 64px;
+    }
+
+          .zoom-img6  {
+           transition: transform 0.2s; /* 添加过渡效果 */
+           position: relative;
+           width: 50px; /* 缩小图片为原来的一半大小 */
+           height: auto; /* 自动计算高度以保持比例 */
+           left: 500px; /* 向右偏移50像素 */
+           top: 44px;
+    }
+
+        .zoom-img7  {
+           transition: transform 0.2s; /* 添加过渡效果 */
+           position: relative;
+           width: 50px; /* 缩小图片为原来的一半大小 */
+           height: auto; /* 自动计算高度以保持比例 */
+           left: 520px; /* 向右偏移50像素 */
+           top: 74px;
+    }
+    .zoom-img8  {
+           transition: transform 0.2s; /* 添加过渡效果 */
+           position: relative;
+           width: 70px; /* 缩小图片为原来的一半大小 */
+           height: auto; /* 自动计算高度以保持比例 */
+           left: 460px; /* 向右偏移50像素 */
+           top: 84px;
+    }
+    .zoom-img9  {
+           transition: transform 0.2s; /* 添加过渡效果 */
+           position: relative;
+           width: 50px; /* 缩小图片为原来的一半大小 */
+           height: auto; /* 自动计算高度以保持比例 */
+           left: 380px; /* 向右偏移50像素 */
+           top: 484px;
+    }
+    .zoom-img10  {
+           transition: transform 0.2s; /* 添加过渡效果 */
+           position: relative;
+           width: 50px; /* 缩小图片为原来的一半大小 */
+           height: auto; /* 自动计算高度以保持比例 */
+           left: 80px; /* 向右偏移50像素 */
+           top: 484px;
+    }
+          /* 鼠标悬停时放大图片 */
+         .zoom-img:hover {
+        transform: scale(10); /* 图片放大到原始大小的 1.2 倍 */
+         }
+
+         #返回 img {
+            width: 80px; /* 设置图片宽度为100像素 */
+            height: auto; /* 自动计算图片的高度，以保持比例 */
+            position: fixed; /* 设置图片的定位方式为绝对定位 */
+            top: 85%; /* 设置图片的垂直位置为页面垂直居中向上偏移5% */
+            left: 25%; /* 设置图片的水平位置为页面水平居中 */
+            transform: translateX(660px); /* 将人物介绍图片向右移动110像素 */
+            cursor: pointer; /* 添加指针样式，使鼠标悬停在图片上时呈现为手型 */
+          
+        }
+</style>
+</head>
+<body>
     </style>
 </head>
 <body>
-    <div id="dong1">
-        <img src="dong1.png" alt="dong1">
+   
+    <img class="zoom-img" src="dong1.png" alt="Placeholder Image" >
+   
+    <img class="zoom-img1" src="dongb.png" alt="Placeholder Image" >
+   
+    <img class="zoom-img2" src="maque.png" alt="Placeholder Image" >
+
+    
+    <img class="zoom-img3" src="yellow.png" alt="Placeholder Image" >
+
+    <img class="zoom-img4" src="人间乐园c.png" alt="Placeholder Image" >
+   
+    <img class="zoom-img5" src="人间乐园n.png" alt="Placeholder Image" >
+
+    <img class="zoom-img6" src="人间乐园y.png" alt="Placeholder Image" >
+
+    <img class="zoom-img7" src="人间乐园b.png" alt="Placeholder Image" >
+
+    <img class="zoom-img8" id="zoom-img8" src="彩虹.png" alt="Placeholder Image" >
+
+    <img class="zoom-img9" src="兔子.png" alt="Placeholder Image" >
+
+    
+    <img class="zoom-img10" src="bear.png" alt="Placeholder Image" >
+
+    <div id="返回" >
+        <img src="返回.png" alt="返回">
     </div>
-    <div id="dong2">
-        <img src="dong2.png" alt="dong2">
-    </div>
-    <div id="dongb">
-        <img src="dongb.png" alt="dongb">
-    </div>
-    <div id="maque">
-        <img src="maque.png" alt="maque">
-    </div>
-    <div id="yellow">
-        <img src="yellow.png" alt="yellow">
-    </div>
-    <div id="人间乐园b">
-        <img src="人间乐园b.png" alt="人间乐园b">
-    </div>
-    <div id="人间乐园c">
-        <img src="人间乐园c.png" alt="人间乐园c">
-    </div>
-    <div id="人间乐园n">
-        <img src="人间乐园n.png" alt="人间乐园n">
-    </div>
-    <div id="人间乐园y">
-        <img src="人间乐园y.png" alt="人间乐园y">
-    </div>
-    <div id="彩虹">
-        <img src="彩虹.png" alt="彩虹">
-    </div>
+
+
+    
+
+    
+
 <script>
-    document.getElementById('彩虹').onclick = function() {
-    window.location.href = 'index10.html';
-}
+    // 获取所有具有 zoom-img 类的图片
+    const zoomImages = document.querySelectorAll('.zoom-img');
+    
+    // 为每个图片添加事件监听器
+    zoomImages.forEach(image => {
+      // 鼠标进入事件
+      image.addEventListener('mouseenter', () => {
+        image.style.transition = 'transform 0.2s'; // 添加过渡效果
+        image.style.transform = 'scale(3)'; // 放大到原始大小的 1.2 倍
+      });
+      
+      // 鼠标离开事件
+      image.addEventListener('mouseleave', () => {
+        image.style.transition = 'transform 0.2s'; // 添加过渡效果
+        image.style.transform = 'scale(1)'; // 恢复原始大小
+      });
+    });
+
+  </script>
+  
+  <script>
+    // 获取所有具有 zoom-img 类的图片
+    const zoomImages1 = document.querySelectorAll('.zoom-img1');
+    
+    // 为每个图片添加事件监听器
+    zoomImages1.forEach(image => {
+      // 鼠标进入事件
+      image.addEventListener('mouseenter', () => {
+        image.style.transition = 'transform 0.2s'; // 添加过渡效果
+        image.style.transform = 'scale(3)'; // 放大到原始大小的 1.2 倍
+      });
+      
+      // 鼠标离开事件
+      image.addEventListener('mouseleave', () => {
+        image.style.transition = 'transform 0.2s'; // 添加过渡效果
+        image.style.transform = 'scale(1)'; // 恢复原始大小
+      });
+    });
+
+  </script>
+
+
+
+
+<script>
+    // 获取所有具有 zoom-img 类的图片
+    const zoomImages2 = document.querySelectorAll('.zoom-img2');
+    
+    // 为每个图片添加事件监听器
+    zoomImages2.forEach(image => {
+      // 鼠标进入事件
+      image.addEventListener('mouseenter', () => {
+        image.style.transition = 'transform 0.2s'; // 添加过渡效果
+        image.style.transform = 'scale(10)'; // 放大到原始大小的 1.2 倍
+      });
+      
+      // 鼠标离开事件
+      image.addEventListener('mouseleave', () => {
+        image.style.transition = 'transform 0.2s'; // 添加过渡效果
+        image.style.transform = 'scale(1)'; // 恢复原始大小
+      });
+    });
+
+  </script>
+
+
+
+
+<script>
+    // 获取所有具有 zoom-img 类的图片
+    const zoomImages3 = document.querySelectorAll('.zoom-img3');
+    
+    // 为每个图片添加事件监听器
+    zoomImages3.forEach(image => {
+      // 鼠标进入事件
+      image.addEventListener('mouseenter', () => {
+        image.style.transition = 'transform 0.2s'; // 添加过渡效果
+        image.style.transform = 'scale(10)'; // 放大到原始大小的 1.2 倍
+      });
+      
+      // 鼠标离开事件
+      image.addEventListener('mouseleave', () => {
+        image.style.transition = 'transform 0.2s'; // 添加过渡效果
+        image.style.transform = 'scale(1)'; // 恢复原始大小
+      });
+    });
+
+  </script>
+
+
+
+
+
+<script>
+    // 获取所有具有 zoom-img 类的图片
+    const zoomImages4 = document.querySelectorAll('.zoom-img4');
+    
+    // 为每个图片添加事件监听器
+    zoomImages4.forEach(image => {
+      // 鼠标进入事件
+      image.addEventListener('mouseenter', () => {
+        image.style.transition = 'transform 0.2s'; // 添加过渡效果
+        image.style.transform = 'scale(10)'; // 放大到原始大小的 1.2 倍
+      });
+      
+      // 鼠标离开事件
+      image.addEventListener('mouseleave', () => {
+        image.style.transition = 'transform 0.2s'; // 添加过渡效果
+        image.style.transform = 'scale(1)'; // 恢复原始大小
+      });
+    });
+
+  </script>
+
+<script>
+    // 获取所有具有 zoom-img 类的图片
+    const zoomImages5 = document.querySelectorAll('.zoom-img5');
+    
+    // 为每个图片添加事件监听器
+    zoomImages5.forEach(image => {
+      // 鼠标进入事件
+      image.addEventListener('mouseenter', () => {
+        image.style.transition = 'transform 0.2s'; // 添加过渡效果
+        image.style.transform = 'scale(10)'; // 放大到原始大小的 1.2 倍
+      });
+      
+      // 鼠标离开事件
+      image.addEventListener('mouseleave', () => {
+        image.style.transition = 'transform 0.2s'; // 添加过渡效果
+        image.style.transform = 'scale(1)'; // 恢复原始大小
+      });
+    });
+
+  </script>
+
+
+<script>
+    // 获取所有具有 zoom-img 类的图片
+    const zoomImages6 = document.querySelectorAll('.zoom-img6');
+    
+    // 为每个图片添加事件监听器
+    zoomImages6.forEach(image => {
+      // 鼠标进入事件
+      image.addEventListener('mouseenter', () => {
+        image.style.transition = 'transform 0.2s'; // 添加过渡效果
+        image.style.transform = 'scale(10)'; // 放大到原始大小的 1.2 倍
+      });
+      
+      // 鼠标离开事件
+      image.addEventListener('mouseleave', () => {
+        image.style.transition = 'transform 0.2s'; // 添加过渡效果
+        image.style.transform = 'scale(1)'; // 恢复原始大小
+      });
+    });
+
+  </script>
+
+<script>
+    // 获取 zoom-img8 图片
+    const zoomImg8 = document.getElementById('zoom-img8');
+
+    // 添加鼠标悬停事件监听器
+    zoomImg8.addEventListener('mouseenter', () => {
+        // 获取 zoom-img7 图片
+        const zoomImg7 = document.querySelector('.zoom-img7');
+
+        // 同时放大 zoom-img7 和 zoom-img8 图片
+        zoomImg7.style.transition = 'transform 0.2s'; // 添加过渡效果
+        zoomImg7.style.transform = 'scale(10)'; // 放大到原始大小的 1.2 倍
+        zoomImg8.style.transition = 'transform 0.2s'; // 添加过渡效果
+        zoomImg8.style.transform = 'scale(10)'; // 放大到原始大小的 1.2 倍
+    });
+
+    // 添加鼠标离开事件监听器
+    zoomImg8.addEventListener('mouseleave', () => {
+        // 获取 zoom-img7 图片
+        const zoomImg7 = document.querySelector('.zoom-img7');
+
+        // 恢复 zoom-img7 和 zoom-img8 图片到原始大小
+        zoomImg7.style.transition = 'transform 0.2s'; // 添加过渡效果
+        zoomImg7.style.transform = 'scale(1)'; // 恢复原始大小
+        zoomImg8.style.transition = 'transform 0.2s'; // 添加过渡效果
+        zoomImg8.style.transform = 'scale(1)'; // 恢复原始大小
+    });
 </script>
+
+
+
+
+
+
+<script>
+    // 获取所有具有 zoom-img 类的图片
+    const zoomImages9 = document.querySelectorAll('.zoom-img9');
+    
+    // 为每个图片添加事件监听器
+    zoomImages9.forEach(image => {
+      // 鼠标进入事件
+      image.addEventListener('mouseenter', () => {
+        image.style.transition = 'transform 0.2s'; // 添加过渡效果
+        image.style.transform = 'scale(10)'; // 放大到原始大小的 1.2 倍
+      });
+      
+      // 鼠标离开事件
+      image.addEventListener('mouseleave', () => {
+        image.style.transition = 'transform 0.2s'; // 添加过渡效果
+        image.style.transform = 'scale(1)'; // 恢复原始大小
+      });
+    });
+
+
+  </script>
+
+
+
+
+
+<script>
+    // 获取所有具有 zoom-img 类的图片
+    const zoomImages10 = document.querySelectorAll('.zoom-img10');
+    
+    // 为每个图片添加事件监听器
+    zoomImages10.forEach(image => {
+      // 鼠标进入事件
+      image.addEventListener('mouseenter', () => {
+        image.style.transition = 'transform 0.2s'; // 添加过渡效果
+        image.style.transform = 'scale(10)'; // 放大到原始大小的 1.2 倍
+      });
+      
+      // 鼠标离开事件
+      image.addEventListener('mouseleave', () => {
+        image.style.transition = 'transform 0.2s'; // 添加过渡效果
+        image.style.transform = 'scale(1)'; // 恢复原始大小
+      });
+    });
+
+
+  </script>
+
+<script>
+    // 获取返回按钮图片
+    const backButton = document.querySelector('#返回 img');
+
+    // 鼠标点击事件
+    backButton.addEventListener('click', () => {
+        // 在这里添加页面跳转的代码
+        window.location.href = 'index1.html';
+    });
+
+    // 鼠标进入事件
+    backButton.addEventListener('mouseenter', () => {
+        // 不应用动态效果，可以留空或者写你想要的其他效果
+    });
+
+    // 鼠标离开事件
+    backButton.addEventListener('mouseleave', () => {
+        // 不应用动态效果，可以留空或者写你想要的其他效果
+    });
+</script>
+
 </body>
 </html>
