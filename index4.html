@@ -6,23 +6,31 @@
     <script src="script.js"></script>
     <title>Caroline's Website</title>
     <style>
-         #背景 {
-            background-image: url('种子孕育.png');
-            background-size: 400px; /* 将背景图片大小设置为固定的像素值 */
-            background-position: center;
-            background-repeat: no-repeat;
-            margin: 0; /* 确保去除默认的 body 边距 */
-            padding: 0; /* 确保去除默认的 body 内边距 */
-         }
-         #种子 {
-            position: absolute; /* 设置绝对定位 */
-            top: 60%; /* 将种子放置在背景垂直中心 */
-            left: 40%; /* 将种子放置在背景水平中心 */
-            transform: translate(-50%, -50%); /* 使种子在父元素中居中 */
-            width: 100px; /* 设置种子宽度 */
-            height: auto; /* 让高度自适应以保持宽高比 */
-            cursor: pointer; 
+       #背景 {
+            position: fixed;
+            top: -90px; /* 调整向下的距离 */
+            left: 100px; /* 调整向右的距离 */
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* 将背景置于最底层 */
         }
+
+        #背景 img {
+            width: 90%; /* 设置图片宽度为页面宽度的一半 */
+            height: auto; /* 自动计算高度以保持比例 */
+            object-fit: cover; /* 保持图片比例并填充整个容器 */
+        }
+        #种子 img{
+            width: 400px; /* 设置地球宽度 */
+            height: 400px; /* 设置地球高度 */
+            object-fit: cover; /* 保持图片比例并填充整个容器 */
+            position: fixed; /* 设置地球的定位方式为绝对定位 */
+            top: 46%; /* 设置地球的垂直位置为页面垂直居中向上偏移30% */
+            left: 48%; /* 设置地球的水平位置为页面水平居中 */
+            transform: translate(-50%, -50%); /* 将地球向上和向左移动50%的宽度和高度，以使其水平和垂直居中 */
+            cursor: pointer; /* 添加指针样式，使鼠标悬停在地球图片上时呈现为手型 */
+        }
+
     </style>
 </head>
 <body>
